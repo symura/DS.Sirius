@@ -50,13 +50,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
-    <Content Include="Scripts\jquery-1.9.1.js" />
-    <Content Include="Scripts\jquery-1.9.1.min.js" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Scripts\jquery-1.9.1.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BattleNet\Models\" />
