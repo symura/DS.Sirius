@@ -1,0 +1,26 @@
+﻿@model DS.Sirius.Web.Models.CareerModel
+
+@{
+    ViewBag.Title = "Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Profile</h2>
+
+<table>
+   
+
+    @foreach (var item in Model.HeroCollection) {
+
+        <tr>
+            <td>
+                @Html.ActionLink(item.HeroName, "Hero", "Character",new { battleTag = item.BattleTag, heroID = item.HeroID }, null)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HeroClass)
+            </td>
+
+        </tr>
+}
+
+</table>

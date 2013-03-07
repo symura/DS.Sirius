@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Character";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    @using (Html.BeginForm("Profile", "Character", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.TextBox("Text")
+        <input id="search" type="submit" value="Search"  />
+    }
+</div>

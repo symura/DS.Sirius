@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DS.Sirius.Web", "DS.Sirius.Web\DS.Sirius.Web.csproj", "{996B9114-5F1A-412A-852B-1AB7AE05109F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DS.Sirius.Core", "DS.Sirius.Core\DS.Sirius.Core.csproj", "{FBC48B7D-FFAD-47B2-88BB-BEA930837D81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DS.Sirius.DA", "DS.Sirius.DA\DS.Sirius.DA.csproj", "{8E43B775-E6EF-4E0F-A7AB-F34BBD86894A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{996B9114-5F1A-412A-852B-1AB7AE05109F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{996B9114-5F1A-412A-852B-1AB7AE05109F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{996B9114-5F1A-412A-852B-1AB7AE05109F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{996B9114-5F1A-412A-852B-1AB7AE05109F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC48B7D-FFAD-47B2-88BB-BEA930837D81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC48B7D-FFAD-47B2-88BB-BEA930837D81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC48B7D-FFAD-47B2-88BB-BEA930837D81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC48B7D-FFAD-47B2-88BB-BEA930837D81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E43B775-E6EF-4E0F-A7AB-F34BBD86894A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E43B775-E6EF-4E0F-A7AB-F34BBD86894A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E43B775-E6EF-4E0F-A7AB-F34BBD86894A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E43B775-E6EF-4E0F-A7AB-F34BBD86894A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>PetaPoco.RelationExtensions</id>
+    <version>1.0.2</version>
+    <title>PetaPoco.RelationExtensions</title>
+    <authors>Adam Schröder</authors>
+    <owners>Adam Schröder</owners>
+    <licenseUrl>http://www.toptensoftware.com/petapoco/license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>One-to-Many and Many-to-One relation mapping extensions for PetaPoco</description>
+    <releaseNotes />
+    <tags>PetaPoco Sql One-to-Many Many-to-One</tags>
+    <dependencies>
+      <dependency id="PetaPoco.Core" version="4.0.3" />
+    </dependencies>
+    <references />
+  </metadata>
+</package>
