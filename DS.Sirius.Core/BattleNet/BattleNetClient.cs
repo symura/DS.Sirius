@@ -6,7 +6,7 @@ using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using DS.Sirius.Core.BattleNet.Models;
+
 using Newtonsoft.Json;
 
 namespace DS.Sirius.Core.BattleNet
@@ -61,43 +61,43 @@ namespace DS.Sirius.Core.BattleNet
 
         //}
 
-        public async Task<Career> GetCareerAsync(string profileName)
-        {
-            try
-            {
-                profileName = profileName.Replace("#", "-");
-                var apiMethod = new Uri(new Uri(BattleNetBaseUri), String.Format(BattleNet_Api_Profile, profileName)).ToString();
+        //public async Task<Career> GetCareerAsync(string profileName)
+        //{
+        //    try
+        //    {
+        //        profileName = profileName.Replace("#", "-");
+        //        var apiMethod = new Uri(new Uri(BattleNetBaseUri), String.Format(BattleNet_Api_Profile, profileName)).ToString();
 
-                var jsonResult = CallApiMethod(apiMethod);
+        //        var jsonResult = CallApiMethod(apiMethod);
 
-                return (await JsonConvert.DeserializeObjectAsync<Career>(jsonResult));                                   
-            }
-            catch (Exception)
-            {
+        //        return (await JsonConvert.DeserializeObjectAsync<Career>(jsonResult));                                   
+        //    }
+        //    catch (Exception)
+        //    {
 
-                return null;
-            }
+        //        return null;
+        //    }
             
-        }
+        //}
 
-        public async Task<Hero> GetHeroAsync(string profileName, int heroID)
-        {
-            try
-            {
-                profileName = profileName.Replace("#", "-");
-                var apiMethod = new Uri(new Uri(BattleNetBaseUri), String.Format(BattleNet_Api_Hero, profileName, heroID.ToString())).ToString();
+        //public async Task<Hero> GetHeroAsync(string profileName, int heroID)
+        //{
+        //    try
+        //    {
+        //        profileName = profileName.Replace("#", "-");
+        //        var apiMethod = new Uri(new Uri(BattleNetBaseUri), String.Format(BattleNet_Api_Hero, profileName, heroID.ToString())).ToString();
 
-                var jsonResult = CallApiMethod(apiMethod);
+        //        var jsonResult = CallApiMethod(apiMethod);
 
-                return (await JsonConvert.DeserializeObjectAsync<Hero>(jsonResult));
-            }
-            catch (Exception)
-            {
+        //        return (await JsonConvert.DeserializeObjectAsync<Hero>(jsonResult));
+        //    }
+        //    catch (Exception)
+        //    {
 
-                return null;
-            }
+        //        return null;
+        //    }
 
-        }
+        //}
 
 
 

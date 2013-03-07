@@ -60,6 +60,12 @@
   <ItemGroup>
     <Folder Include="Common\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DS.Sirius.Core\DS.Sirius.Core.csproj">
+      <Project>{fbc48b7d-ffad-47b2-88bb-bea930837d81}</Project>
+      <Name>DS.Sirius.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
