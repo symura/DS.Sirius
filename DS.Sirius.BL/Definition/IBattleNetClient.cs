@@ -5,13 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using DS.Sirius.Core.Models;
 
-namespace DS.Sirius.DA.Definition
+namespace DS.Sirius.BL.Definition
 {
-    public interface IBattleNetRepository : IDisposable
+    public interface IBattleNetClient
     {
         Career GetCareerByBattleTag(string battleTag);
-        Hero GetHeroById(string battleTag, long id);
-
+        Hero GetHeroByID(string battleTag, long id);
 
     }
 }

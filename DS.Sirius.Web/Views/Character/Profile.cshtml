@@ -1,4 +1,4 @@
-﻿@model DS.Sirius.Web.Models.CareerModel
+﻿@model DS.Sirius.Core.Models.Career
 
 @{
     ViewBag.Title = "Profile";
@@ -10,14 +10,14 @@
 <table>
    
 
-    @foreach (var item in Model.HeroCollection) {
+    @foreach (var item in Model.Heroes) {
 
         <tr>
-            <td>
-                @Html.ActionLink(item.HeroName, "Hero", "Character",new { battleTag = item.BattleTag, heroID = item.HeroID }, null)
+            <td>                        
+                @Html.ActionLink(item.Name, "Hero", "Character",new { battleTag = Model.BattleTag, heroID = item.Id }, null)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.HeroClass)
+                @Html.DisplayFor(modelItem => item.CharacterClass)
             </td>
 
         </tr>

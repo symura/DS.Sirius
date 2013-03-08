@@ -6,8 +6,8 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Mvc;
-using DS.Sirius.Core.BattleNet;
-using DS.Sirius.Core.BattleNet.Models;
+using DS.Sirius.BL.Implementation;
+
 using DS.Sirius.Web.Models;
 
 namespace DS.Sirius.Web.Controllers
@@ -29,37 +29,24 @@ namespace DS.Sirius.Web.Controllers
 
             //return RedirectToAction("Profile", await BattleNetClient.Current.GetCareerAsync(Text));
 
-            var model = await BattleNetClient.Current.GetCareerAsync(Text);
-
-            CareerModel cm = new CareerModel();
-            cm.HeroCollection = new List<HeroModel>();
-            if (model != null)
-            {
-                cm.HeroCollection.AddRange(model.heroes.Select(hero => new HeroModel() {HeroClass = hero.characterClass, HeroName = hero.name, HeroID = hero.id, BattleTag = Text}));
-            }
-
-            return View("Profile", cm); //RedirectToAction("Profile");
+            var model = BattleNetClient.Current.GetCareerByBattleTag(Text);
+            
+            return View("Profile", model); //RedirectToAction("Profile");
         }
 
-        
+               
 
-        private void GetCareer(Career career)
+        public async Task<ActionResult> Hero(string battleTag, long heroID)
         {
-            if (career != null)
-                Redirect("Character/Profile");                
-        }
+            var model = BattleNetClient.Current.GetHeroByID(battleTag, heroID);
 
-        public async Task<ActionResult> Hero(string battleTag, int heroID)
-        {
-            var model = await BattleNetClient.Current.GetHeroAsync(battleTag, heroID);
+            //var heroModel = new HeroModel();
 
-            var heroModel = new HeroModel();
-
-            if (model != null)
-            {
+            //if (model != null)
+            //{
 
 
-            }
+            //}
 
 
             return View();

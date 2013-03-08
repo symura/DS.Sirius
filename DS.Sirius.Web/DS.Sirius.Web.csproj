@@ -294,6 +294,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DS.Sirius.BL\DS.Sirius.BL.csproj">
+      <Project>{7669d834-898f-48e1-81cd-49c51ae948ff}</Project>
+      <Name>DS.Sirius.BL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DS.Sirius.Core\DS.Sirius.Core.csproj">
       <Project>{fbc48b7d-ffad-47b2-88bb-bea930837d81}</Project>
       <Name>DS.Sirius.Core</Name>

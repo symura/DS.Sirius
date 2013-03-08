@@ -7,22 +7,25 @@ using System.Runtime.Serialization;
 using System.Xml.Serialization;
 using Newtonsoft.Json;
 
-namespace DS.Sirius.DA.Implementation.Models
+namespace DS.Sirius.Core.Models
 {
     [DataContract]
     public class TimePlayed
     {
         [DataMember]
-        public double barbarian { get; set; }
+        [JsonProperty("barbarian")]
+        public double Barbarian { get; set; }
         [DataMember]
         [JsonProperty("demon-hunter")]
-        public double demonhunter { get; set; }
+        public double Demonhunter { get; set; }
         [DataMember]
-        public double monk { get; set; }
+        [JsonProperty("monk")]
+        public double Monk { get; set; }
         [DataMember]
         [JsonProperty("witch-doctor")]
-        public double witchdoctor { get; set; }
+        public double Witchdoctor { get; set; }
         [DataMember]
-        public double wizard { get; set; }
+        [JsonProperty("wizard")]
+        public double Wizard { get; set; }
     }
 }

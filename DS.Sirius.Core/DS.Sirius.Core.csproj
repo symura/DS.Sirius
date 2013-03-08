@@ -68,7 +68,6 @@
     <Compile Include="Audit\SqlTableAuditLogger.cs" />
     <Compile Include="Audit\SqlTableSignedAuditLogger.cs" />
     <Compile Include="Audit\WindowsLogEvents.cs" />
-    <Compile Include="BattleNet\BattleNetClient.cs" />
     <Compile Include="Common\AttributeSet.cs" />
     <Compile Include="Common\INameMapper.cs" />
     <Compile Include="Common\ITypeResolver.cs" />
@@ -140,6 +139,13 @@
     <Compile Include="Logging\LoggerBase.cs" />
     <Compile Include="Logging\TextWriterLoggerBase.cs" />
     <Compile Include="Logging\ThreadSafeLoggerBase.cs" />
+    <Compile Include="Models\Career.cs" />
+    <Compile Include="Models\Head.cs" />
+    <Compile Include="Models\Hero.cs" />
+    <Compile Include="Models\Items.cs" />
+    <Compile Include="Models\Kills.cs" />
+    <Compile Include="Models\Stats.cs" />
+    <Compile Include="Models\TimePlayed.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\CertificateProvider.cs" />
     <Compile Include="Security\ISignableDocument.cs" />
@@ -185,9 +191,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BattleNet\Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -4,18 +4,21 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 
-namespace DS.Sirius.DA.Implementation.Models
+namespace DS.Sirius.Core.Models
 {
     [DataContract]
     public class Kills
     {
         [DataMember]
-        public int monsters { get; set; }
+        [JsonProperty("monsters")]
+        public int Monsters { get; set; }
         [DataMember]
-        public int elites { get; set; }
+        [JsonProperty("elites")]
+        public int Elites { get; set; }
         [DataMember]
-        public int hardcoreMonsters { get; set; }
+        [JsonProperty("hardcoreMonsters")]
+        public int HardcoreMonsters { get; set; }
     }
 }

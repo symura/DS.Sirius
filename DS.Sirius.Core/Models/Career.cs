@@ -4,29 +4,36 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using Newtonsoft.Json;
 
 
-namespace DS.Sirius.DA.Implementation.Models
+namespace DS.Sirius.Core.Models
 {
     [DataContract]
     public class Career
     {
 
         [DataMember]
-        public IList<Hero> heroes { get; set; }
+        [JsonProperty("heroes")]
+        public IList<Hero> Heroes { get; set; }
         [DataMember]
-        public int lastHeroPlayed { get; set; }
+        [JsonProperty("lastHeroPlayed")]
+        public int LastHeroPlayed { get; set; }
         [DataMember]
-        public int lastUpdated { get; set; }
+        [JsonProperty("lastUpdated")]
+        public int LastUpdated { get; set; }
         //public IList<Artisan> artisans { get; set; }
         //public IList<HardcoreArtisan> hardcoreArtisans { get; set; }
         [DataMember]
-        public Kills kills { get; set; }
+        [JsonProperty("kills")]
+        public Kills Kills { get; set; }
         [DataMember]
-        public TimePlayed timePlayed { get; set; }
+        [JsonProperty("timePlayed")]
+        public TimePlayed TimePlayed { get; set; }
         //public IList<FallenHero> fallenHeroes { get; set; }
         [DataMember]
-        public string battleTag { get; set; }
+        [JsonProperty("battleTag")]
+        public string BattleTag { get; set; }
         //public Progression progression { get; set; }
         //public HardcoreProgression hardcoreProgression { get; set; }
     }
