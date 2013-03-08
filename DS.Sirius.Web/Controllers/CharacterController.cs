@@ -40,6 +40,9 @@ namespace DS.Sirius.Web.Controllers
         {
             var model = BattleNetClient.Current.GetHeroByID(battleTag, heroID);
 
+        //http://media.blizzard.com/d3/icons/skills/64/wizard_teleport.png
+        //http://media.blizzard.com/d3/icons/items/large/bow_206_demonhunter_male.png
+
             //var heroModel = new HeroModel();
 
             //if (model != null)
@@ -49,7 +52,7 @@ namespace DS.Sirius.Web.Controllers
             //}
 
 
-            return View();
+            return View("Hero", model);
         }
 
     }
