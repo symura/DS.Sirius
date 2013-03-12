@@ -11,7 +11,7 @@ using Newtonsoft.Json.Linq;
 namespace DS.Sirius.Core.Models
 {
     [DataContract]
-    public class Head
+    public class GearItem
     {
         [DataMember]
         [JsonProperty("id")]

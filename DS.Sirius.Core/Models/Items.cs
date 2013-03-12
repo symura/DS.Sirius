@@ -12,18 +12,42 @@ namespace DS.Sirius.Core.Models
     {
         [DataMember]
         [JsonProperty("head")]
-        public Head Head { get; set; }
-        //public Torso torso { get; set; }
-        //public Feet feet { get; set; }
-        //public Hands hands { get; set; }
-        //public Shoulders shoulders { get; set; }
-        //public Legs legs { get; set; }
-        //public Bracers bracers { get; set; }
-        //public MainHand mainHand { get; set; }
-        //public OffHand offHand { get; set; }
-        //public Waist waist { get; set; }
-        //public RightFinger rightFinger { get; set; }
-        //public LeftFinger leftFinger { get; set; }
-        //public Neck neck { get; set; }
+        public GearItem Head { get; set; }
+        [DataMember]
+        [JsonProperty("torso")]
+        public GearItem Torso { get; set; }
+        [DataMember]
+        [JsonProperty("feet")]
+        public GearItem Feet { get; set; }
+        [DataMember]
+        [JsonProperty("hands")]
+        public GearItem Hands { get; set; }
+        [DataMember]
+        [JsonProperty("shoulders")]
+        public GearItem Shoulders { get; set; }
+        [DataMember]
+        [JsonProperty("legs")]
+        public GearItem Legs { get; set; }
+        [DataMember]
+        [JsonProperty("bracers")]
+        public GearItem Bracers { get; set; }
+        [DataMember]
+        [JsonProperty("mainHand")]
+        public GearItem MainHand { get; set; }
+        [DataMember]
+        [JsonProperty("offHand")]
+        public GearItem OffHand { get; set; }
+        [DataMember]
+        [JsonProperty("waist")]
+        public GearItem Waist { get; set; }
+        [DataMember]
+        [JsonProperty("rightFinger")]
+        public GearItem RightFinger { get; set; }
+        [DataMember]
+        [JsonProperty("leftFinger")]
+        public GearItem LeftFinger { get; set; }
+        [DataMember]
+        [JsonProperty("neck")]
+        public GearItem Neck { get; set; }
     }
 }

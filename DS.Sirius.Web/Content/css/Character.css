@@ -1,0 +1,52 @@
+﻿.character-sheet {
+    width: 500px;
+    position: absolute;
+}
+
+.gear-slots {
+    margin: 0 0 0 100px;
+    position: relative;
+}
+
+.gear-slots li {
+    position: absolute;
+    display: block;
+    outline: none;
+    text-align: center;
+}
+
+.gear-slots li .slot-link
+    {
+        display: block;
+        outline: none;
+       
+        color: transparent;
+        background-color: transparent;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-decoration: none;
+    }
+
+.gear-slots li .image {
+display: block;
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+.gear-slots li .image img {
+position: relative;
+}
+
+/* SLOTS*/
+.gear-slots .slot-head{left: 60px;width: 66px;height: 66px;background-color: #36921F;}
+.gear-slots .slot-head .image img {top: -31px;}
+
+.gear-slots .slot-torso {left: 52px;top: 80px;width: 82px;height: 115px;background-color: #36921F;}
+.gear-slots .slot-torso .image img {top: -25px;}
+
+
+
+
+
+    
