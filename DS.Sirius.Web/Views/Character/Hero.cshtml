@@ -6,7 +6,19 @@
 }
 
 <h2>Hero</h2>      
-           
+       <script src="http://us.battle.net/d3/static/js/tooltips.js"></script>
+<script>
+var b = Bnet.D3.Tooltips;
+b.registerDataOld = b.registerData;
+b.registerData = function(data) {
+ var c = document.body.children, s = c[c.length-1].src;
+ data.params.key=s.substr(0,s.indexOf('?')).substr(s.lastIndexOf('/')+1);
+ this.registerDataOld(data);
+}
+</script>    
+        
 
+@*<a href="http://us.battle.net/d3/en/class/wizard/active/teleport">item</a>*@
+                                                                                          
+<a href="@Model.Items.Head.ItemTooltipUrl"  onclick="return false"><img src="@Model.Items.Head.IconUrl"/></a>     
 
-<a href="http://us.battle.net/d3/en/class/wizard/active/teleport">item</a>

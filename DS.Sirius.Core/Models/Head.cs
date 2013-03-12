@@ -4,6 +4,7 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using DS.Sirius.Core.Common;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -27,5 +28,15 @@ namespace DS.Sirius.Core.Models
         [DataMember]
         [JsonProperty("tooltipParams")]
         public string TooltipParams { get; set; }
+
+        public string IconUrl {
+            get { return String.Format(BattleNetConstants.BattleNetMediaLargeItemIconUrl, Icon); }
+        }
+
+        public string ItemTooltipUrl
+        {
+            get { return String.Format(BattleNetConstants.BattleNetApiBaseUriEU, TooltipParams); }
+        }
+
     }
 }

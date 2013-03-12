@@ -43,6 +43,10 @@ namespace DS.Sirius.Core.Models
         [DataMember]
         [JsonProperty("stats")]
         public Stats Stats { get; set; }
+        [DataMember]
+        [JsonProperty("items")]
+        public Items Items { get; set; }
+
         
     }
 }

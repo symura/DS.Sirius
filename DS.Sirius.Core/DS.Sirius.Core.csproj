@@ -69,6 +69,7 @@
     <Compile Include="Audit\SqlTableSignedAuditLogger.cs" />
     <Compile Include="Audit\WindowsLogEvents.cs" />
     <Compile Include="Common\AttributeSet.cs" />
+    <Compile Include="Common\BattleNetConstants.cs" />
     <Compile Include="Common\INameMapper.cs" />
     <Compile Include="Common\ITypeResolver.cs" />
     <Compile Include="Common\IXElementRepresentable.cs" />

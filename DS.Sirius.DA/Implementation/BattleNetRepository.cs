@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using DS.Sirius.Core.Common;
 using DS.Sirius.DA.Definition;
 using DS.Sirius.Core.Models;
 using Newtonsoft.Json;
@@ -17,9 +18,7 @@ namespace DS.Sirius.DA.Implementation
 
         public string Region { get; set; }
 
-        private string _battleNetApiBaseUri = "http://{0}.battle.net/api/d3/";
-        private string _battleNetApiProfile = "profile/{0}/";
-        private string _battleNetApiHero    = "profile/{0}/hero/{1}";
+       
 
         protected string BattleNetRegionCode
         {
@@ -29,7 +28,7 @@ namespace DS.Sirius.DA.Implementation
 
         protected Uri BattleNetApiBaseUri
         {
-            get { return new Uri(string.Format(_battleNetApiBaseUri, BattleNetRegionCode)); }
+            get { return new Uri(string.Format(BattleNetConstants.BattleNetApiBaseUri, BattleNetRegionCode)); }
         }
 
 
@@ -49,8 +48,8 @@ namespace DS.Sirius.DA.Implementation
         {
             try
             {
-                
-                var apiMethod = new Uri(BattleNetApiBaseUri, String.Format(_battleNetApiProfile, battleTag)).ToString();
+
+                var apiMethod = new Uri(BattleNetApiBaseUri, String.Format(BattleNetConstants.BattleNetApiProfile, battleTag)).ToString();
 
                 var jsonResult = CallApiMethod(apiMethod);
 
@@ -69,7 +68,7 @@ namespace DS.Sirius.DA.Implementation
             try
             {
 
-                var apiMethod = new Uri(BattleNetApiBaseUri, String.Format(_battleNetApiHero, battleTag, id.ToString())).ToString();
+                var apiMethod = new Uri(BattleNetApiBaseUri, String.Format(BattleNetConstants.BattleNetApiHero, battleTag, id.ToString())).ToString();
 
                 var jsonResult = CallApiMethod(apiMethod);
 
