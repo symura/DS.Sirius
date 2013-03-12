@@ -42,10 +42,17 @@ position: relative;
 .gear-slots .slot-head{left: 60px;width: 66px;height: 66px;background-color: #36921F;}
 .gear-slots .slot-head .image img {top: -31px;}
 
-.gear-slots .slot-torso {left: 52px;top: 80px;width: 82px;height: 115px;background-color: #36921F;}
+.gear-slots .slot-torso {left: 52px;top: 76px;width: 82px;height: 115px;background-color: #36921F;}
 .gear-slots .slot-torso .image img {top: -25px;}
 
+.gear-slots .slot-waist {left: 52px;top: 203px;width: 82px;height: 34px;background-color: #36921F;}
+.gear-slots .slot-waist .image img {top: -15px;}
 
+.gear-slots .slot-legs {left: 60px;top: 251px;width: 66px;height: 88px;background-color: #36921F;}
+.gear-slots .slot-legs .image img {top: -20px;}
+
+.gear-slots .slot-feet {left: 60px;top: 347px;width: 66px;height: 88px;background-color: #36921F;}
+.gear-slots .slot-feet .image img {top: -20px;}
 
 
 
