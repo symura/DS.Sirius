@@ -39,21 +39,41 @@ position: relative;
 }
 
 /* SLOTS*/
-.gear-slots .slot-head{left: 60px;width: 66px;height: 66px;background-color: #36921F;}
+.gear-slots .slot-head{left: 95px;width: 66px;height: 66px;background-color: #36921F;}
 .gear-slots .slot-head .image img {top: -31px;}
 
-.gear-slots .slot-torso {left: 52px;top: 76px;width: 82px;height: 115px;background-color: #36921F;}
+.gear-slots .slot-torso {left: 87px;top: 76px;width: 82px;height: 115px;background-color: #36921F;}
 .gear-slots .slot-torso .image img {top: -25px;}
 
-.gear-slots .slot-waist {left: 52px;top: 203px;width: 82px;height: 34px;background-color: #36921F;}
+.gear-slots .slot-waist {left: 87px;top: 203px;width: 82px;height: 34px;background-color: #36921F;}
 .gear-slots .slot-waist .image img {top: -15px;}
 
-.gear-slots .slot-legs {left: 60px;top: 251px;width: 66px;height: 88px;background-color: #36921F;}
+.gear-slots .slot-legs {left: 95px;top: 251px;width: 66px;height: 88px;background-color: #36921F;}
 .gear-slots .slot-legs .image img {top: -20px;}
 
-.gear-slots .slot-feet {left: 60px;top: 347px;width: 66px;height: 88px;background-color: #36921F;}
+.gear-slots .slot-feet {left: 95px;top: 347px;width: 66px;height: 88px;background-color: #36921F;}
 .gear-slots .slot-feet .image img {top: -20px;}
 
+.gear-slots .slot-shoulder {left: 15px;top: 28px;width: 66px;height: 88px;background-color: #36921F;}
+.gear-slots .slot-shoulder .image img {top: -20px;}
 
+.gear-slots .slot-hands {left: 0px;top: 127px;width: 66px;height: 88px;background-color: #36921F;}
+.gear-slots .slot-hands .image img {top: -20px;}
 
-    
+ .gear-slots .slot-leftRing {left: 5px;top: 226px;width: 40px;height: 40px;background-color: #36921F;}
+.gear-slots .slot-leftRing .image img {top: -12px;left: -12px;}  
+
+.gear-slots .slot-mainHand {left: 0px;top: 277px;width: 66px;height: 130px;background-color: #36921F;}
+.gear-slots .slot-mainHand .image img {top: 0px;}  
+
+.gear-slots .slot-neck {left: 176px;top: 48px;width: 56px;height: 56px;background-color: #36921F;}
+.gear-slots .slot-neck .image img {top: -4px;left: -4px;}  
+
+.gear-slots .slot-bracer {left: 191px;top: 125px;width: 66px;height: 88px;background-color: #36921F;}
+.gear-slots .slot-bracer .image img {top: -20px;}  
+
+ .gear-slots .slot-rightRing {left: 203px;top: 226px;width: 40px;height: 40px;background-color: #36921F;}
+.gear-slots .slot-rightRing .image img {top: -12px;left: -12px;}  
+
+.gear-slots .slot-offHand {left: 191px;top: 277px;width: 66px;height: 130px;background-color: #36921F;}
+.gear-slots .slot-offHand .image img {top: 0px;}  
