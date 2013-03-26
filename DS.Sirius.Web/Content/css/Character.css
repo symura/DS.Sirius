@@ -1,6 +1,26 @@
-﻿.character-sheet {
+﻿.profile-sheet {
+    position: relative;
+
+}
+
+.character-sheet {
     width: 500px;
+    height: 450px;
+    left: 30px;
+    top: 20px;   
     position: absolute;
+}
+
+.stats-sheet
+{
+    background-position: center top;
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    left: 520px;
+    top: 20px;
+    background-image: url('../images/Old_paper_BG.jpg');
+    background-repeat: no-repeat;
 }
 
 .gear-slots {
@@ -77,3 +97,14 @@ position: relative;
 
 .gear-slots .slot-offHand {left: 191px;top: 277px;width: 66px;height: 130px;background-color: #36921F;}
 .gear-slots .slot-offHand .image img {top: 0px;}  
+
+/*STATS*/
+.stats-sheet ul {
+    list-style-type: none;
+}
+
+.stats-label {
+    text-shadow:  1px 1px 0px #000;
+    color: #d96500;
+    width: 100px;   
+}

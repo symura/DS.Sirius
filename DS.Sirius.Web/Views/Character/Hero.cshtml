@@ -14,145 +14,168 @@
         var c = document.body.children, s = c[c.length - 1].src;
         data.params.key = s.substr(0, s.indexOf('?')).substr(s.lastIndexOf('/') + 1);
         this.registerDataOld(data);
-    }
-    
+    };
 </script>
 
 
 @*<a href="http://us.battle.net/d3/en/class/wizard/active/teleport">item</a>*@
+<div class="profile-sheet">
+    <div class="character-sheet">
+        <ul class="gear-slots">
+            <li class="slot-head">
+                <a class="slot-link" href="@Model.Items.Head.ItemTooltipUrl"  onclick="return false">
+                    <span class="image">
+                        <img src="@Model.Items.Head.IconUrl"/>
+                    </span>
 
-<div class="character-sheet">
-    <ul class="gear-slots">
-        <li class="slot-head">
-            <a class="slot-link" href="@Model.Items.Head.ItemTooltipUrl"  onclick="return false">
-                <span class="image">
-                    <img src="@Model.Items.Head.IconUrl"/>
-                </span>
+                </a>
+            </li>
 
-            </a>
-        </li>   
-        
-        <li class="slot-torso">
-            <a class="slot-link" href="@Model.Items.Torso.ItemTooltipUrl"  onclick="return false">
-                <span class="image">
-                    <img src="@Model.Items.Torso.IconUrl"/>
-                </span>
+            <li class="slot-torso">
+                <a class="slot-link" href="@Model.Items.Torso.ItemTooltipUrl"  onclick="return false">
+                    <span class="image">
+                        <img src="@Model.Items.Torso.IconUrl"/>
+                    </span>
 
-            </a>
-        </li> 
-        
-         <li class="slot-waist">
-            <a class="slot-link" href="@Model.Items.Waist.ItemTooltipUrl"  onclick="return false">
-                <span class="image">
-                    <img src="@Model.Items.Waist.IconUrl"/>
-                </span>
+                </a>
+            </li>
 
-            </a>
-         </li> 
-        
-        <li class="slot-legs">
-            <a class="slot-link" href="@Model.Items.Legs.ItemTooltipUrl"  onclick="return false">
-                <span class="image">
-                    <img src="@Model.Items.Legs.IconUrl"/>
-                </span>
+            <li class="slot-waist">
+                <a class="slot-link" href="@Model.Items.Waist.ItemTooltipUrl"  onclick="return false">
+                    <span class="image">
+                        <img src="@Model.Items.Waist.IconUrl"/>
+                    </span>
 
-            </a>
-        </li> 
-        
-         <li class="slot-feet">
-            <a class="slot-link" href="@Model.Items.Feet.ItemTooltipUrl"  onclick="return false">
-                <span class="image">
-                    <img src="@Model.Items.Feet.IconUrl"/>
-                </span>
+                </a>
+            </li>
 
-            </a>
-         </li> 
-        
-         <li class="slot-shoulder">
-            <a class="slot-link" href="@Model.Items.Shoulders.ItemTooltipUrl"  onclick="return false">
-                <span class="image">
-                    <img src="@Model.Items.Shoulders.IconUrl"/>
-                </span>
+            <li class="slot-legs">
+                <a class="slot-link" href="@Model.Items.Legs.ItemTooltipUrl"  onclick="return false">
+                    <span class="image">
+                        <img src="@Model.Items.Legs.IconUrl"/>
+                    </span>
 
-            </a>
-         </li> 
-        
-         <li class="slot-shoulder">
-            <a class="slot-link" href="@Model.Items.Shoulders.ItemTooltipUrl"  onclick="return false">
-                <span class="image">
-                    <img src="@Model.Items.Shoulders.IconUrl"/>
-                </span>
+                </a>
+            </li>
 
-            </a>
-         </li>  
-        
-        
-         <li class="slot-hands">
-            <a class="slot-link" href="@Model.Items.Hands.ItemTooltipUrl"  onclick="return false">
-                <span class="image">
-                    <img src="@Model.Items.Hands.IconUrl"/>
-                </span>
+            <li class="slot-feet">
+                <a class="slot-link" href="@Model.Items.Feet.ItemTooltipUrl"  onclick="return false">
+                    <span class="image">
+                        <img src="@Model.Items.Feet.IconUrl"/>
+                    </span>
 
-            </a>
-         </li> 
-        
-        
-         <li class="slot-leftRing">
-            <a class="slot-link" href="@Model.Items.LeftFinger.ItemTooltipUrl"  onclick="return false">
-                <span class="image">
-                    <img src="@Model.Items.LeftFinger.IconUrl"/>
-                </span>
+                </a>
+            </li>
 
-            </a>
-         </li>    
-        
-        <li class="slot-mainHand">
-            <a class="slot-link" href="@Model.Items.MainHand.ItemTooltipUrl"  onclick="return false">
-                <span class="image">
-                    <img src="@Model.Items.MainHand.IconUrl"/>
-                </span>
+            <li class="slot-shoulder">
+                <a class="slot-link" href="@Model.Items.Shoulders.ItemTooltipUrl"  onclick="return false">
+                    <span class="image">
+                        <img src="@Model.Items.Shoulders.IconUrl"/>
+                    </span>
 
-            </a>
-        </li> 
-        
-        <li class="slot-neck">
-            <a class="slot-link" href="@Model.Items.Neck.ItemTooltipUrl"  onclick="return false">
-                <span class="image">
-                    <img src="@Model.Items.Neck.IconUrl"/>
-                </span>
+                </a>
+            </li>
 
-            </a>
-        </li>
-        
-        <li class="slot-bracer">
-            <a class="slot-link" href="@Model.Items.Bracers.ItemTooltipUrl"  onclick="return false">
-                <span class="image">
-                    <img src="@Model.Items.Bracers.IconUrl"/>
-                </span>
+            <li class="slot-shoulder">
+                <a class="slot-link" href="@Model.Items.Shoulders.ItemTooltipUrl"  onclick="return false">
+                    <span class="image">
+                        <img src="@Model.Items.Shoulders.IconUrl"/>
+                    </span>
 
-            </a>
-        </li> 
-        
-        <li class="slot-rightRing">
-            <a class="slot-link" href="@Model.Items.RightFinger.ItemTooltipUrl"  onclick="return false">
-                <span class="image">
-                    <img src="@Model.Items.RightFinger.IconUrl"/>
-                </span>
+                </a>
+            </li>
 
-            </a>
-        </li>  
-        
-         <li class="slot-offHand">
-            <a class="slot-link" href="@Model.Items.OffHand.ItemTooltipUrl"  onclick="return false">
-                <span class="image">
-                    <img src="@Model.Items.OffHand.IconUrl"/>
-                </span>
 
-            </a>
-        </li>
+            <li class="slot-hands">
+                <a class="slot-link" href="@Model.Items.Hands.ItemTooltipUrl"  onclick="return false">
+                    <span class="image">
+                        <img src="@Model.Items.Hands.IconUrl"/>
+                    </span>
 
-    </ul>
+                </a>
+            </li>
 
+
+            <li class="slot-leftRing">
+                <a class="slot-link" href="@Model.Items.LeftFinger.ItemTooltipUrl"  onclick="return false">
+                    <span class="image">
+                        <img src="@Model.Items.LeftFinger.IconUrl"/>
+                    </span>
+
+                </a>
+            </li>
+
+            <li class="slot-mainHand">
+                <a class="slot-link" href="@Model.Items.MainHand.ItemTooltipUrl"  onclick="return false">
+                    <span class="image">
+                        <img src="@Model.Items.MainHand.IconUrl"/>
+                    </span>
+
+                </a>
+            </li>
+
+            <li class="slot-neck">
+                <a class="slot-link" href="@Model.Items.Neck.ItemTooltipUrl"  onclick="return false">
+                    <span class="image">
+                        <img src="@Model.Items.Neck.IconUrl"/>
+                    </span>
+
+                </a>
+            </li>
+
+            <li class="slot-bracer">
+                <a class="slot-link" href="@Model.Items.Bracers.ItemTooltipUrl"  onclick="return false">
+                    <span class="image">
+                        <img src="@Model.Items.Bracers.IconUrl"/>
+                    </span>
+
+                </a>
+            </li>
+
+            <li class="slot-rightRing">
+                <a class="slot-link" href="@Model.Items.RightFinger.ItemTooltipUrl"  onclick="return false">
+                    <span class="image">
+                        <img src="@Model.Items.RightFinger.IconUrl"/>
+                    </span>
+
+                </a>
+            </li>
+
+            <li class="slot-offHand">
+                <a class="slot-link" href="@Model.Items.OffHand.ItemTooltipUrl"  onclick="return false">
+                    <span class="image">
+                        <img src="@Model.Items.OffHand.IconUrl"/>
+                    </span>
+
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div class="stats-sheet">
+        <ul>
+            <li>
+                <span class="stats-label">Strength</span>
+            </li> 
+            
+            <li>
+                 <span class="stats-label">Dexterity</span>
+            </li>
+            
+            
+            <li>
+                 <span class="stats-label">Intellect</span>
+            </li>        
+            
+            
+            <li>
+                <span class="stats-label"> Vitality</span>
+            </li>
+
+        </ul>
+    </div>
 </div>
 
 
