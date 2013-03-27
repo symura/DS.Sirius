@@ -99,12 +99,37 @@ position: relative;
 .gear-slots .slot-offHand .image img {top: 0px;}  
 
 /*STATS*/
+.stats-primary {
+    width: 234px;
+    display: block;
+
+}
+
 .stats-sheet ul {
     list-style-type: none;
 }
 
 .stats-label {
     text-shadow:  1px 1px 0px #000;
-    color: #d96500;
-    width: 100px;   
+    color: #fd7e10;
+    width: 100px;
+    
+}
+
+li {
+    display: list-item;
+}
+
+span {
+    display: block;
+    height:26px;
+    line-height: 26px; 
+    float: left; 
+}
+
+.stats-value {
+    text-shadow:  1px 1px 0px #000;
+    color: #ffffff;
+    width: 50px;
+    text-align: right;
 }
